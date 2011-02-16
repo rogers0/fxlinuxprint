@@ -1,31 +1,32 @@
 *PPD-Adobe: "4.3"
 *%
-*%Fuji Xerox Printer Driver for Linux
-*%(C) Fuji Xerox Co.,Ltd. 2006
+*% Fuji Xerox Printer Driver for Linux
+*% (C) Fuji Xerox Co., Ltd. 2007-2011
 *%
-*%This program is free software; you can redistribute it and/or
-*%modify it under the terms of the GNU General Public License
-*%as published by the Free Software Foundation; either version 2
-*%of the License, or (at your option) any later version.
+*% This program is free software; you can redistribute it and/or
+*% modify it under the terms of the GNU General Public License
+*% as published by the Free Software Foundation; either version 2
+*% of the License, or (at your option) any later version.
 *%
-*%This program is distributed in the hope that it will be useful,
-*%but WITHOUT ANY WARRANTY; without even the implied warranty of
-*%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*%GNU General Public License for more details.
+*% This program is distributed in the hope that it will be useful,
+*% but WITHOUT ANY WARRANTY; without even the implied warranty of
+*% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*% GNU General Public License for more details.
 *%
-*%You should have received a copy of the GNU General Public License
-*%along with this program; if not, write to the Free Software
-*%Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*% You should have received a copy of the GNU General Public License
+*% along with this program; if not, write to the Free Software
+*% Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 *%
 *%
+*FileVersion:	"2.0"
 *FormatVersion:	"4.3"
-*FileVersion:	"1.0"
 *LanguageVersion: English 
 *LanguageEncoding: ISOLatin1
-*PCFileName:	"FXLINUXPRINT.PPD"
+*cupsLanguages: "ja"
+*PCFileName:	"FXPDFPRN.PPD"
 *Manufacturer:	"FX"
-*Product:	"FX Printer Driver for Linux"
-*cupsVersion:	1.1
+*Product:	"(FX Printer Driver for Linux)"
+*cupsVersion:	1.2
 *cupsManualCopies: True
 *cupsModelNumber:  2
 *cupsFilter:	"application/vnd.cups-pdfprintfx 0 pdftopjlfx"
@@ -47,19 +48,8 @@
 *Throughput:	"1"
 *LandscapeOrientation: Plus90
 *TTRasterizer:	Type42
-
-*% OutputMode Information ===================
 *DefaultResolution: 600dpi
-*?Resolution: "
-save
-    currentpagedevice /HWResolution get dup aload pop eq
-    {0 get cvi 9 string cvs print}
-    {aload pop exch cvi 9 string cvs print (x) print cvi 9 string cvs print}
-    ifelse (dpi) =
-restore
-"
-*End
-
+*?Resolution: "save currentpagedevice /HWResolution get 0 get ( ) cvs print (dpi) = flush restore"
 
 *OpenGroup: General/General
 
@@ -164,8 +154,8 @@ restore
 *OpenUI *FXCollate/Collated: Boolean
 *OrderDependency: 130 AnySetup *FXCollate
 *DefaultFXCollate: False
-*FXCollate False/False : ""
-*FXCollate True/True: ""
+*FXCollate False: ""
+*FXCollate True: ""
 *CloseUI: *FXCollate
 
 *OpenUI *FXStaple/Stapling: PickOne
@@ -450,3 +440,56 @@ restore
 *Font ZapfChancery-MediumItalic: Standard "(002.000)" ExtendedRoman ROM
 *Font ZapfChanceryCE-MediumItalic: Win1250 "(002.000)" ExtendedRoman ROM
 *Font ZapfDingbats: Special "(001.005S)" Special ROM
+
+*% Japanese localization
+*ja.Translation General/一般: ""
+*ja.Translation PageSize/出力用紙サイズ: ""
+*ja.PageSize A4/A4 (210 x 297mm): ""
+*ja.PageSize A3/A3 (297 x 420mm): ""
+*ja.PageSize A5/A5 (148 x 210mm): ""
+*ja.PageSize B4/B4 (257 x 364mm): ""
+*ja.PageSize B5/B5 (182 x 257mm): ""
+*ja.PageSize Letter/8.5x11" (レター): ""
+*ja.PageSize Legal/8.5x14" (リーガル): ""
+*ja.PageSize Ledger/11x17": ""
+*ja.Translation FXCollate/ソートする[1部ごと]: ""
+*ja.FXCollate False/しない: ""
+*ja.FXCollate True/する: ""
+*ja.Translation FXColorMode/カラーモード: ""
+*ja.FXColorMode Auto/カラー(自動判別): ""
+*ja.FXColorMode Black/白黒: ""
+*ja.Translation FXOutputMode/印刷モード: ""
+*ja.FXOutputMode Standard/標準: ""
+*ja.FXOutputMode Quality2/高画質: ""
+*ja.FXOutputMode Speed/高速: ""
+*ja.Translation Duplex/両面印刷: ""
+*ja.Duplex None/しない: ""
+*ja.Duplex DuplexTumble/短辺とじ: ""
+*ja.Duplex DuplexNoTumble/長辺とじ: ""
+*ja.Translation FXLayout/レイアウト: ""
+*ja.FXLayout Auto/自動倍率: ""
+*ja.FXLayout TopLeft/左上配置: ""
+*ja.FXLayout Center/中央配置: ""
+*ja.FXLayout Booklet/小冊子: ""
+*ja.FXLayout 2up/2アップ: ""
+*ja.FXLayout 4up/4アップ: ""
+*ja.Translation FXMediaType/用紙種類: ""
+*ja.FXMediaType Plain/標準: ""
+*ja.FXMediaType Printer/プリンタの設定:""
+*ja.Translation InputSlot/用紙トレイ: ""
+*ja.InputSlot Auto/自動: ""
+*ja.InputSlot Tray5/手差しトレイ: ""
+*ja.InputSlot Tray1/トレイ1: ""
+*ja.InputSlot Tray2/トレイ2: ""
+*ja.InputSlot Tray3/トレイ3: ""
+*ja.InputSlot Tray4/トレイ4: ""
+*ja.Translation FXStaple/ホチキス: ""
+*ja.FXStaple None/しない: ""
+*ja.FXStaple UpperLeftSingle/左上１ヶ所: ""
+*ja.FXStaple LeftDouble/左２ヶ所: ""
+*ja.FXStaple TopDouble/上２ヶ所: ""
+*ja.Translation FXPunch/パンチ: ""
+*ja.FXPunch Off/しない: ""
+*ja.FXPunch On/する: ""
+
+*%End of PPD
