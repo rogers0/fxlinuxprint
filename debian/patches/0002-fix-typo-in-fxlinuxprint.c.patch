@@ -1,0 +1,28 @@
+From: Roger Shimizu <rogershimizu@gmail.com>
+Date: Sun, 16 Oct 2016 16:27:43 +0900
+Subject: fix typo in fxlinuxprint.c
+
+---
+ fxlinuxprint.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/fxlinuxprint.c b/fxlinuxprint.c
+index 34ddf30..52d0ac7 100644
+--- a/fxlinuxprint.c
++++ b/fxlinuxprint.c
+@@ -587,12 +587,12 @@ int fxExecFilter (char* arg[])
+ 
+ 	switch (pid=fork()) {
+ 	case -1:	// error
+-		fputs ("ERROR: ps2pdf proccess is not exist.", stderr);
++		fputs ("ERROR: ps2pdf process is not exist.", stderr);
+ 		rtn = -2;
+-	case 0:		// child proccess
++	case 0:		// child process
+ 		sleep (5);
+ 		execvp (arg[0], arg);
+-		fputs ("ERROR: ps2pdf proccess is abnormal end.", stderr);
++		fputs ("ERROR: ps2pdf process is abnormal end.", stderr);
+ 		rtn = -1;
+ 		exit (-1);
+ 		break;
