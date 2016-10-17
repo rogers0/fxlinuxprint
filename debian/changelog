@@ -1,4 +1,11 @@
-fxlinuxprint (1.1.1-1~p2) unstable; urgency=medium
+fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
+
+  * debian/patches:
+    - Refresh 0001 patch
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Mon, 17 Oct 2016 22:28:38 +0900
+
+fxlinuxprint (1.1.0-1~p2) unstable; urgency=medium
 
   * Bump Standard version: 3.9.6
   * Add gzip -n option to avoid timestamped gz

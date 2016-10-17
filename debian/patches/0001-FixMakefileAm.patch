@@ -6,8 +6,10 @@ Subject: FixMakefileAm
  Makefile.am | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 
---- fxlinuxprint.orig/Makefile.am
-+++ fxlinuxprint/Makefile.am
+diff --git a/Makefile.am b/Makefile.am
+index 70f7040..6de940d 100644
+--- a/Makefile.am
++++ b/Makefile.am
 @@ -1,10 +1,10 @@
  cupsfilterdir = /usr/lib/cups/filter
 -cupsppddir = /usr/share/cups/model/FujiXerox/en
