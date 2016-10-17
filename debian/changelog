@@ -6,10 +6,17 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
   * debian/control:
     - Set printing team as maintainer, and myself as uploader.
     - Bump debhelper level to 10, remove implied build dependencies.
+    - Update URL of source
   * debian/watch:
     - Add watch file
   * debian/rules:
     - Remove implied parameters. Thanks to debhelper 10.
+  * debian/copyright:
+    - Update copyright years
+    - Update URL of source
+    - Update typo in description of GPL-2+
+    - Add entry of myself
+    - Add copyright for file: mimefx.convs mimefx.types
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Mon, 17 Oct 2016 22:28:38 +0900
 
