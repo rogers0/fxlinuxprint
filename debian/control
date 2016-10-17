@@ -8,7 +8,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 10),
  libcups2-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://www.fujixerox.co.jp/download/apeosport/download/c4300series/linux_module.html
 Vcs-Git: https://github.com/rogers0/fxlinuxprint.git
 Vcs-Browser: https://github.com/rogers0/fxlinuxprint

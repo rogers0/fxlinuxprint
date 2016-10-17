@@ -7,6 +7,7 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
     - Set printing team as maintainer, and myself as uploader.
     - Bump debhelper level to 10, remove implied build dependencies.
     - Update URL of source
+    - Bump policy version to 3.9.8 (no change required).
   * debian/watch:
     - Add watch file
   * debian/rules:
