@@ -5,6 +5,8 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
     - Add 0002 patch to fix typo in fxlinuxprint.c
   * debian/control:
     - Set printing team as maintainer, and myself as uploader.
+  * debian/watch:
+    - Add watch file
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Mon, 17 Oct 2016 22:28:38 +0900
 
