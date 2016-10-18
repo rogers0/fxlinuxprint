@@ -10,6 +10,7 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
     - Bump policy version to 3.9.8 (no change required).
     - Rename binrary package name from fxlinuxprint
       to printer-driver-fujixerox
+    - Add more supported printers to list
   * debian/watch:
     - Add watch file
   * debian/rules:
