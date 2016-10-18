@@ -8,6 +8,8 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
     - Bump debhelper level to 10, remove implied build dependencies.
     - Update URL of source
     - Bump policy version to 3.9.8 (no change required).
+    - Rename binrary package name from fxlinuxprint
+      to printer-driver-fujixerox
   * debian/watch:
     - Add watch file
   * debian/rules:

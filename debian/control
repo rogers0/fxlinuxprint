@@ -13,9 +13,11 @@ Homepage: https://www.fujixerox.co.jp/download/apeosport/download/c4300series/li
 Vcs-Git: https://github.com/rogers0/fxlinuxprint.git
 Vcs-Browser: https://github.com/rogers0/fxlinuxprint
 
-Package: fxlinuxprint
+Package: printer-driver-fujixerox
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: fxlinuxprint (<< 1.1.0-1)
+Breaks: fxlinuxprint (<< 1.1.0-1)
 Description: PPD file and postscript filter for Fuji Xerox printer
  This package provides PPD file and PostScript filter for Fuji Xerox
  printer. The following printers are supported:
