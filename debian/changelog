@@ -18,6 +18,8 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
     - Update typo in description of GPL-2+
     - Add entry of myself
     - Add copyright for file: mimefx.convs mimefx.types
+  * debian/upstream/metadata:
+    - Add UpstreamMetadata file
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Mon, 17 Oct 2016 22:28:38 +0900
 
