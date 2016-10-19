@@ -1,0 +1,25 @@
+From: Roger Shimizu <rogershimizu@gmail.com>
+Date: Wed, 19 Oct 2016 00:02:35 +0900
+Subject: make use of the pdftopdf filter
+
+This should fix the issue that CUPS options, like number-up and page-ranges,
+were ignored.
+
+Thanks to advice from Till Kamppeter <till.kamppeter@gmail.com>.
+---
+ mimefx.convs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/mimefx.convs b/mimefx.convs
+index ad1e717..8143bfa 100644
+--- a/mimefx.convs
++++ b/mimefx.convs
+@@ -41,7 +41,7 @@
+ ########################################################################
+ # Fuji Xerox Printer Driver for Linux
+ 
+-application/pdf	application/vnd.cups-pdfprintfx	0	pdftopdffx
++application/vnd.cups-pdf application/vnd.cups-pdfprintfx 0	pdftopdffx
+ 
+ #
+ # End of "$Id: mime.convs,v 1.20 2004/02/25 20:14:51 mike Exp $".
