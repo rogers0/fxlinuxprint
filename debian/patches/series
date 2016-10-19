@@ -1,2 +1,3 @@
 0001-FixMakefileAm.patch
 0002-fix-typo-in-fxlinuxprint.c.patch
+0003-correct-install-path-for-.types-and-.convs-files.patch

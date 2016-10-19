@@ -1,0 +1,25 @@
+From: Roger Shimizu <rogershimizu@gmail.com>
+Date: Tue, 18 Oct 2016 23:54:34 +0900
+Subject: correct install path for *.types and *.convs files
+
+*.types and *.convs are not config files as the user is not supposed to
+modify them.
+Install them into /usr/share/cups/mime/, instead of /etc/cups/
+
+Thanks to advice from Till Kamppeter <till.kamppeter@gmail.com>.
+---
+ Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index 6de940d..e30ca66 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,6 +1,6 @@
+ cupsfilterdir = /usr/lib/cups/filter
+ cupsppddir = /usr/share/ppd/FujiXerox
+-cupsmimedir = /etc/cups
++cupsmimedir = /usr/share/cups/mime
+ 
+ cupsfilter_PROGRAMS = pstopdffx pdftopjlfx pdftopdffx
+ EXTRA_DIST = fxlinuxprint.ppd mimefx.types mimefx.convs

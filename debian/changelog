@@ -3,6 +3,8 @@ fxlinuxprint (1.1.0+ds-1) UNRELEASED; urgency=medium
   * debian/patches:
     - Refresh 0001 patch
     - Add 0002 patch to fix typo in fxlinuxprint.c
+    - Add 0003 patch to correct install path for *.types and *.convs files.
+      Thanks to advice of Till Kamppeter <till.kamppeter@gmail.com>.
   * debian/control:
     - Set printing team as maintainer, and myself as uploader.
     - Bump debhelper level to 10, remove implied build dependencies.
